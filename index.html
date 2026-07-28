@@ -4,6 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Junior Baez — Full-Stack .NET Developer & QA Specialist</title>
+<meta name="description" content="Full-Stack .NET Developer & QA Specialist based in the Dominican Republic. Building and validating software end-to-end.">
+<meta property="og:title" content="Junior Baez — Full-Stack .NET Developer & QA Specialist">
+<meta property="og:description" content="Building and validating software end-to-end.">
+<meta property="og:image" content="profile.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -116,7 +120,26 @@
   @media(max-width:720px){.navlinks{display:none;}}
 
   /* HERO */
+  .hero-intro{display:flex;align-items:center;gap:18px;margin-bottom:26px;}
+  .hero-photo{
+    width:84px;height:84px;border-radius:50%;object-fit:cover;flex-shrink:0;
+    border:3px solid var(--surface-2);
+    box-shadow:0 0 0 1px var(--line), 0 12px 28px -14px rgba(108,79,209,0.45);
+  }
+  .hero-name{font-family:'Space Grotesk',sans-serif;font-size:21px;font-weight:700;}
+  .hero-role{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--violet-deep);margin-top:3px;}
+  @media(max-width:480px){
+    .hero-photo{width:68px;height:68px;}
+    .hero-name{font-size:18px;}
+    .hero-role{font-size:11px;}
+  }
+
   .hero{padding:88px 0 64px;position:relative;overflow:hidden;}
+  @media(max-width:480px){
+    .wrap{padding:0 18px;}
+    .hero{padding:64px 0 48px;}
+    .terminal{padding:16px 18px;font-size:12.5px;}
+  }
   .terminal{
     background:var(--chrome-bg);
     border:1px solid var(--chrome-line);
@@ -126,12 +149,15 @@
     font-family:'JetBrains Mono',monospace;
     font-size:14px;
     max-width:560px;
+    width:100%;
+    box-sizing:border-box;
     box-shadow:0 20px 50px -20px rgba(76,47,160,0.35);
     margin-bottom:36px;
+    overflow-wrap:anywhere;
   }
   .terminal .tbar{display:flex;gap:6px;margin-bottom:14px;}
   .terminal .tdot{width:9px;height:9px;border-radius:50%;background:#4A4358;}
-  .terminal .line{white-space:pre;}
+  .terminal .line{white-space:pre-wrap;word-break:break-word;}
   .terminal .kw{color:#B79CF7;}
   .terminal .str{color:#8FE3B5;}
   .terminal .ok{color:var(--pass);font-weight:600;}
@@ -271,14 +297,22 @@
   <div class="wrap">
     <div class="eyebrow">available for full-stack / QA hybrid roles</div>
 
+    <div class="hero-intro">
+      <img src="profile.jpg" alt="Junior Baez" class="hero-photo">
+      <div>
+        <div class="hero-name">Junior Baez</div>
+        <div class="hero-role">Full-Stack .NET Developer &amp; QA Specialist</div>
+      </div>
+    </div>
+
+    <h1>I build software, then I make sure it <span class="accent">actually works.</span></h1>
+    <p class="lede">Hey, I'm Junior 👋 — I'm the person who builds it and then makes sure it doesn't break. Based in the Dominican Republic, I split my time between full-stack .NET development and quality assurance, and honestly, I like it that way — building something and stress-testing it teaches you things neither half can teach alone.</p>
+
     <div class="terminal">
       <div class="tbar"><span class="tdot"></span><span class="tdot"></span><span class="tdot"></span></div>
       <div class="line"><span class="kw">assert</span>(engineer.<span class="kw">builds</span>() &amp;&amp; engineer.<span class="kw">verifies</span>())</div>
       <div class="line"><span class="ok">✓ passed</span> — <span class="str">"no untested code ships"</span><span class="caret"></span></div>
     </div>
-
-    <h1>I build software, then I make sure it <span class="accent">actually works.</span></h1>
-    <p class="lede">Full-stack .NET developer with a background in quality assurance — I write the code and the tests that catch what breaks it, before your users do.</p>
 
     <div class="hero-actions">
       <a href="#projects" class="btn-primary">View projects →</a>
