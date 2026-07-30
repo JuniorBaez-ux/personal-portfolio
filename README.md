@@ -2,7 +2,7 @@
 
 Personal portfolio site for Junior Baez, Full-Stack .NET Developer & QA Specialist.
 
-🔗 Live site: _add your Vercel URL here once deployed_
+🔗 Live site: [juniorbaez-ux.github.io/personal-portfolio](https://juniorbaez-ux.github.io/personal-portfolio/)
 
 ## About
 
